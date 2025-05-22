@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+        <input type="text" id="display" readonly />
+        <div class="buttons">
+            <button onclick="clearDisplay()" class="red">C</button>
+            <button onclick="deleteLast()" class="yellow">DEL</button>
+            <button onclick="appendIntoDisplay('%')" class="pink">%</button>
+            <button onclick="appendIntoDisplay('/')" class="pink">/</button>
+            <button onclick="appendIntoDisplay('7')">7</button>
+            <button onclick="appendIntoDisplay('8')">8</button>
+            <button onclick="appendIntoDisplay('9')">9</button>
+            <button onclick="appendIntoDisplay('x')" class="pink">x</button>
+            <button onclick="appendIntoDisplay('4')">4</button>
+            <button onclick="appendIntoDisplay('5')">5</button>
+            <button onclick="appendIntoDisplay('6')">6</button>
+            <button onclick="appendIntoDisplay('-')" class="pink">-</button>
+            <button onclick="appendIntoDisplay('1')">1</button>
+            <button onclick="appendIntoDisplay('2')">2</button>
+            <button onclick="appendIntoDisplay('3')">3</button>
+            <button onclick="appendIntoDisplay('+')" class="pink">+</button>
+            <button onclick="appendIntoDisplay('0')">0</button>
+            <button onclick="appendIntoDisplay('.')">.</button>
+            <button class="extra green" onclick="calculateResult()">=</button>
+
+        </div>
+    </div>
+    <button id="openModalBTN">Click me to check info</button>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalBTN">x</span>
+            <h2 class="heading">Calculator Info</h2>
+            <p class="red">This calculator is built using HTML, CSS, and JavaScript.</p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
