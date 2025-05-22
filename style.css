@@ -72,7 +72,8 @@ button{
 button:hover {
     box-shadow: none;
     border: none;
-
+    font-weight: 600;
+    transition: all 0.1s linear;
 }
 .extra{
     grid-column: span 2;
